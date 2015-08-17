@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tasheek</title>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fredericka+the+Great|Allura|Amatic+SC|Arizonia|Averia+Sans+Libre|Cabin+Sketch|Francois+One|Jacques+Francois+Shadow|Josefin+Slab|Kaushan+Script|Love+Ya+Like+A+Sister|Merriweather|Offside|Open+Sans:300,400,600,700,800|Open+Sans+Condensed|Oswald|Over+the+Rainbow|Pacifico|Romanesco|Sacramento|Seaweed+Script|Special+Elite" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arimo|Cookie" />
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top">
+	<div id="preloader">
+		<img src="images/logo.png" class="img-responsive wow animated pulse infinite" />
+		<p>Please wait...</p>
+	</div>
+	
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top wow slideInDown animated">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo.png" class="img-responsive visible-xs" style="height: 40px; margin-top: -10px;" /></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a class="page-scroll" href="#page-top">Home</a></li>
+                    <li><a class="page-scroll" href="#what-we-do">What we do?</a></li>
+                    <li><a class="page-scroll" href="#page-top"><img src="images/logo.png" class="img-responsive wow zoomIn animated" style="height: 40px;" /></a></li>
+                    <li><a class="page-scroll" href="#who-we-are">Who are we?</a></li>
+                    <li><a class="page-scroll" href="#holla-at-us">Holla at us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                
+                <!-- White Board -->
+                <div class="white-area wow slideInRight animated" data-wow-duration=".6s">
+                    <a href="#" class="close-white-board hide"><i class="fa fa-times"></i></a>
+                    <a href="#" class="open-white-board">Press to<br />extend <img src="images/arrow.jpg" alt="&lt;" /></a>
+                    <div class="users-names hide">
+                        <span>Saheel Ahmed 1</span>
+                        <span>صهيل أحمد</span>
+                        <span>Saheel Ahmed 3</span>
+                        <span>Saheel Ahmed 1</span>
+                        <span>Saheel Ahmed 2</span>
+                        <span>صهيل أحمد</span>
+                        <span>Saheel Ahmed 1</span>
+                        <span>Saheel Ahmed 2</span>
+                        <span>Saheel Ahmed 3</span>
+                        <span>Saheel Ahmed 1</span>
+                        <span>صهيل أحمد</span>
+                        <span>Saheel Ahmed 3</span>
+                        <span>Saheel Ahmed 1</span>
+                        <span>صهيل أحمد</span>
+                        <span>Saheel Ahmed 3</span>
+                    </div>
+                </div>
+                
+                <!-- Description -->
+                <div class="desc wow fadeIn animated" data-wow-duration=".6s" data-wow-delay="0.2s">
+                    <h1>We design decals for your car with passion</h1>
+                    <p>
+                        Just to be clear, we don't normally do designs for Camry...<br />
+                        but we'll make an exemption
+                    </p>
+                    <a class="btn page-scroll" role="button" href="#what-we-do">Tasheek means Shift</a>
+                </div>
+
+                <!-- Submit Name on Whiteboard -->
+                <div class="submit-name wow fadeIn animated" data-wow-duration=".6s" data-wow-delay="0.4s">
+                    <span>
+                        Write your favorite car name<br class=" hidden-xs" />
+                        and it will show up on the white board <i class="glyphicon glyphicon-hand-right"></i>
+                    </span>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control text-center" id="number" name="number" placeholder="Your name">
+                        </div>
+                        <a class="btn btn-block" role="button">Submit</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section id="what-we-do" class="show">
+        <div class="timeline">
+            <div class="LHS wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.2s">
+                <div class="timeline-item wow slideInUp animated" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <h2>Design on cars</h2>
+                    <p>
+                        Sick of how your car looks like?<br />
+                        Baught a new car, and everyone is buying the same<br class="hidden-xs hidden-sm" /> model!
+                        Want to stand out?<br />
+                        Want to drive a masterpiece?
+                    </p>
+                    <a href="#" class="btn-portfolio">&nbsp; Check out our customized designs on cars for sale</a>
+                    <a href="#" class="btn-proceed-order">Click here to order a customized design only for you</a>
+                </div>
+
+                <div class="timeline-item wow slideInUp animated" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <h2>Better have my money!</h2>
+                    <p>
+                        Payment is on delivery.<br />
+                        We're still not rich enough to do an online payment too,<br class="hidden-xs hidden-sm" />
+                        but we will soon... hopefully
+                    </p>
+                    <a href="#" class="order-now">Order now</a>
+                </div>
+            </div>
+            <div class="RHS wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.2s">
+                <div class="timeline-item wow slideInUp animated" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <h2>
+                        No need to lick it<br class="hidden-xs" />
+                        before you stick it
+                    </h2>
+                    <p>
+                        It's pretty easy to do it yourself or we can send <br class="hidden-xs hidden-sm" />
+                        someone to do it for you (extra 150 AED)
+                    </p>
+                    <a href="#">Watch this sexy "How to do" video or follow the steps</a>
+                </div>
+
+                <div class="timeline-item wow slideInUp animated" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <h2>
+                        When?<br />
+                        About a week ago
+                    </h2>
+                    <p>
+                        place an order today, and you shall receive it in a week.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="hide">
+        <div class="portfolio-header">
+            <div class="col-sm-6">
+                <a href="#" role="button" class="btn-back"><i class="fa fa-angle-left"></i> Back to What we do</a>
+            </div>
+            <div class="col-sm-6 text-right">
+                <a href="#" role="button" class="btn-proceed-collection">Proceed <i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-body">
+
+            <div id="carousel-portfolio" class="carousel slide carousel-fade">
+                <!--<ol class="carousel-indicators">
+                    <li data-target="#carousel-portfolio" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-portfolio" data-slide-to="1" class=""></li>
+                </ol>-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active" style="background-image: url(images/portfolio/sample.jpg);">
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3>
+                                        Design Name: <span class="car-name">Nurburgring 1</span> <br />
+                                        Price: 1500 AED
+                                    </h3>
+                                </div>
+                                <div class="col-sm-6 text-right">
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Add to basket <i class="fa fa-cart-arrow-down"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(images/the-meetups-banner.jpg);">
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3>
+                                        Design Name: <span class="car-name">Nurburgring 2</span> <br />
+                                        Price: 1500 AED
+                                    </h3>
+                                </div>
+                                <div class="col-sm-6 text-right">
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Add to basket <i class="fa fa-cart-arrow-down"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-portfolio" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-portfolio" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="order-form" class="hide">
+
+        <div class="order-content">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12 wow bounceInUp animated">
+                        <h2>You have selected</h2>
+                        <div class="sub-headings">Did you see all our cool designs?<br /><a href="#" class="btn-back-2-what-we-do">Click here to order a customized design only for you</a></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 wow zoomInUp animated">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="ordFullname" name="ordFullname" placeholder="Full Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="ordEmail" name="ordEmail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="ordMobileNo" name="ordMobileNo" placeholder="Mobile Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="ordDateTime" name="ordDateTime" placeholder="Preferred timing of delivery?">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="ordMessage" name="ordMessage"
+                                          placeholder="Location, Select from map"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-default btn-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="who-we-are">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="wow bounceInUp animated">This is the team</h2>
+                    <div class="sub-headings wow pulse animated">We are... creative and a bit crazy</div>
+
+                    <div class="row team">
+                        <div class="col-lg-4 col-sm-4 wow fadeIn animated">
+                            <img src="images/team-img.jpg" class="img-responsive img-circle" />
+                            <h3>FERZO</h3>
+                            <p>
+                                Design & latest automotive updates <br />
+                                Favorite car: Porsche 911 GT3 RS
+                            </p>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 wow fadeIn center animated">
+                            <img src="images/team-img2.jpg" class="img-responsive img-circle" />
+                            <h3>FERZO</h3>
+                            <p>
+                                Design & latest automotive updates <br />
+                                Favorite car: Porsche 911 GT3 RS
+                            </p>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 wow fadeIn animated">
+                            <img src="images/team-img3.jpg" class="img-responsive img-circle" />
+                            <h3>FERZO</h3>
+                            <p>
+                                Design & latest automotive updates <br />
+                                Favorite car: Porsche 911 GT3 RS
+                            </p>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 wow fadeIn animated">
+                            <img src="images/team-img.jpg" class="img-responsive img-circle" />
+                            <h3>FERZO</h3>
+                            <p>
+                                Design & latest automotive updates <br />
+                                Favorite car: Porsche 911 GT3 RS
+                            </p>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 wow fadeIn animated">
+                            <img src="images/team-img.jpg" class="img-responsive img-circle" />
+                            <h3>FERZO</h3>
+                            <p>
+                                Design & latest automotive updates <br />
+                                Favorite car: Porsche 911 GT3 RS
+                            </p>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 wow fadeIn animated">
+                            <img src="images/team-img.jpg" class="img-responsive img-circle" />
+                            <h3>FERZO</h3>
+                            <p>
+                                Design & latest automotive updates <br />
+                                Favorite car: Porsche 911 GT3 RS
+                            </p>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <h3 class="wow bounceInUp animated">
+                        You seriously need to follow us on social media, we're unique we promise.<br />
+                        Support out designs whenever you post or spot our designs use <strong>#TasheekOnFleek</strong>
+                    </h3>
+                    <div class="sm-icons wow pulse animated" data-wow-iteration="4" data-wow-duration="0.25s">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="holla-at-us">
+        <div class="holla-header"></div>
+
+        <div class="holla-content">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12 wow bounceInUp animated">
+                        <h2>Shawty, let me get your number!</h2>
+                        <div class="sub-headings">No booty calls, we promise</div>
+                    </div>
+                </div>
+                <div class="row wow slideInUp animated">
+                    <div class="col-lg-4">
+                        <i class="glyphicon glyphicon-earphone"></i>
+                        <p>
+                            Add your number below, <br />
+                            and we will call you back <br />
+                            for any inquiries
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <i class="glyphicon glyphicon-map-marker"></i>
+                        <p>
+                            Dubai
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <i class="glyphicon glyphicon-envelope"></i>
+                        <p>
+                            <a href="mailto:ask@tasheekgear.com">ask@tasheekgear.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 wow zoomInUp animated">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Full Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="number" name="number" placeholder="Number">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message"
+                                          placeholder="Write your message here and you can also request a customized design, aight"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-default btn-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-right">
+                        Copyright &copy; Tasheek. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment-with-locales.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <script src="js/classie.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
