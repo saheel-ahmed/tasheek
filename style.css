@@ -1,5 +1,4 @@
-﻿
-@font-face {
+﻿@font-face {
     font-family: 'NexaBold';
     src: url('fonts/NexaBold.eot?#iefix') format('embedded-opentype'), url('fonts/NexaBold.otf') format('opentype'), url('fonts/NexaBold.woff') format('woff'), url('fonts/NexaBold.ttf') format('truetype'), url('fonts/NexaBold.svg#NexaBold') format('svg');
     font-weight: normal;
@@ -167,14 +166,14 @@ header {
     background-image: url('images/the-meetups-banner.jpg');
     background-attachment: fixed;
     background-size: cover;
-    background-position: 50% 20%;
+    background-position: 80% 20%;
     background-repeat: no-repeat;
     color: #fff;
 }
 
 @media only screen and (min-width: 1025px) {
     header {
-        background-size: 100%;
+        
     }
 }
 
@@ -194,8 +193,8 @@ header p {
 }
 
 header .white-area {
-    width: 80px;
-    height: 91.5vh;
+    width: 50px;
+    height: 91.2vh;
     align-items: center;
     position: absolute;
     z-index: 10;
@@ -207,6 +206,7 @@ header .white-area {
     -webkit-justify-content: center;
     overflow: auto;
     transition: all ease .8s;
+	font-size: 11px;
 }
 
     header .white-area.open {
@@ -258,9 +258,8 @@ header .white-area {
         }
 
 header .submit-name {
-    max-width: 276px;
-    margin: -197px 48px 0px 0px;
-    float: right;
+    margin: 74px 48px 0px 0px;
+    
 }
 
 header .desc {
@@ -289,9 +288,9 @@ header .btn {
     background-color: #000;
     color: #fff;
     background-image: url('images/what-we-do-bg.jpg');
-    background-position: 2px bottom;
-    padding-bottom: 446px;
-    background-size: 100%;
+    background-position: 50.8% bottom;
+    padding-bottom: 346px;
+    background-size: 80%;
     background-repeat: no-repeat;
 }
 
@@ -302,7 +301,12 @@ header .btn {
     background-image: url('images/white-dot.jpg');
     background-position: center center;
     background-repeat: repeat-y;
+	
+	
 }
+	.timeline a, .timeline p{
+		font-size: 12px;
+	}
 
     .timeline .LHS {
         width: 50%;
@@ -341,7 +345,7 @@ header .btn {
                 border-radius: 50%;
                 border: 6px solid #fff;
                 float: right;
-                margin-right: -102px;
+                margin-right: -100px;
                 margin-top: 32px;
                 transition: all .2s ease-in-out;
             }
@@ -352,7 +356,7 @@ header .btn {
 
             .timeline .LHS .timeline-item h2 {
                 font-family: NexaBold;
-                font-size: 48px;
+                font-size: 26px;
             }
 
             .timeline .LHS .timeline-item p {
@@ -371,6 +375,7 @@ header .btn {
                 margin-bottom: 16px;
                 display: inline-block;
                 text-decoration: none;
+				font-size: 12px;
             }
 
                 .timeline .LHS .timeline-item a:hover {
@@ -417,7 +422,7 @@ header .btn {
                 border-radius: 50%;
                 border: 6px solid #fff;
                 float: left;
-                margin-left: -101px;
+                margin-left: -100px;
                 margin-top: 10px;
                 transition: all .2s ease-in-out;
             }
@@ -428,7 +433,7 @@ header .btn {
 
             .timeline .RHS .timeline-item h2 {
                 font-family: NexaBold;
-                font-size: 48px;
+                font-size: 26px;
             }
 
             .timeline .RHS .timeline-item p {
@@ -624,16 +629,16 @@ header .btn {
 }
 
     .sm-icons a {
-        width: 64px;
-        height: 64px;
+        width: 48px;
+        height: 48px;
         color: #fff;
         display: inline-block;
         margin: 4px 20px;
         border-radius: 50%;
         background-color: #1a1a1a;
         text-align: center;
-        font-size: 38px;
-        padding-top: 8px;
+        font-size: 32px;
+		padding-top: 4px;
         transition: background-color ease-in-out .2s;
     }
 
@@ -669,6 +674,7 @@ header .btn {
 #holla-at-us .holla-content h2 {
     font-family: NexaLight;
     font-size: 28px;
+	padding-top: 60px;
 }
 
 #holla-at-us .holla-content .sub-headings {

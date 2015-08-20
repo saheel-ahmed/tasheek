@@ -153,5 +153,6 @@
 	$(window).load(function(){
 		$("#preloader").fadeOut();
 	});
+	
 
 })(jQuery); // End of use strict

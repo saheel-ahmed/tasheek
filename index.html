@@ -29,7 +29,7 @@
 		<p>Please wait...</p>
 	</div>
 	
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top wow slideInDown animated">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -47,7 +47,7 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a class="page-scroll" href="#page-top">Home</a></li>
                     <li><a class="page-scroll" href="#what-we-do">What we do?</a></li>
-                    <li><a class="page-scroll" href="#page-top"><img src="images/logo.png" class="img-responsive wow zoomIn animated" style="height: 40px;" /></a></li>
+                    <li><a class="page-scroll" href="#page-top"><img src="images/logo.png" class="img-responsive" style="height: 40px;" /></a></li>
                     <li><a class="page-scroll" href="#who-we-are">Who are we?</a></li>
                     <li><a class="page-scroll" href="#holla-at-us">Holla at us</a></li>
                 </ul>
@@ -62,7 +62,7 @@
             <div class="row">
                 
                 <!-- White Board -->
-                <div class="white-area wow slideInRight animated" data-wow-duration=".6s">
+                <div class="white-area wow fadeIn animated" data-wow-duration=".6s">
                     <a href="#" class="close-white-board hide"><i class="fa fa-times"></i></a>
                     <a href="#" class="open-white-board">Press to<br />extend <img src="images/arrow.jpg" alt="&lt;" /></a>
                     <div class="users-names hide">
@@ -84,35 +84,46 @@
                     </div>
                 </div>
                 
-                <!-- Description -->
-                <div class="desc wow fadeIn animated" data-wow-duration=".6s" data-wow-delay="0.2s">
-                    <h1>We design decals for your car with passion</h1>
-                    <p>
-                        Just to be clear, we don't normally do designs for Camry...<br />
-                        but we'll make an exemption
-                    </p>
-                    <a class="btn page-scroll" role="button" href="#what-we-do">Tasheek means Shift</a>
-                </div>
+                <div class="col-md-3">
+				</div>
+				
+				<div class="col-md-6">
+					<!-- Description -->
+					<div class="desc wow fadeIn animated" data-wow-duration=".6s" data-wow-delay="0.2s">
+						<h1>We design decals for your car with passion</h1>
+						<p>
+							Just to be clear, we don't normally do designs for Camry...<br />
+							but we'll make an exemption
+						</p>
+						<a class="btn page-scroll" role="button"><strong>Tasheek means Shift</strong></a>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<!-- Submit Name on Whiteboard -->
+					<div class="submit-name wow fadeIn animated" data-wow-duration=".6s" data-wow-delay="0.4s">
+						<span>
+							Write your favorite car name<br class=" hidden-xs" />
+							and it will show up on the white board <i class="glyphicon glyphicon-hand-right"></i>
+						</span>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control text-center" id="number" name="number" placeholder="Your name">
+							</div>
+							<a class="btn btn-block" role="button">Submit</a>
+						</form>
+					</div>
+				</div>
+				
+                
 
-                <!-- Submit Name on Whiteboard -->
-                <div class="submit-name wow fadeIn animated" data-wow-duration=".6s" data-wow-delay="0.4s">
-                    <span>
-                        Write your favorite car name<br class=" hidden-xs" />
-                        and it will show up on the white board <i class="glyphicon glyphicon-hand-right"></i>
-                    </span>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control text-center" id="number" name="number" placeholder="Your name">
-                        </div>
-                        <a class="btn btn-block" role="button">Submit</a>
-                    </form>
-                </div>
+                
 
             </div>
         </div>
     </header>
 
     <section id="what-we-do" class="show">
+		<div class="container">
         <div class="timeline">
             <div class="LHS wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.2s">
                 <div class="timeline-item wow slideInUp animated" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -161,6 +172,7 @@
                 </div>
             </div>
         </div>
+		</div>
     </section>
 
     <section id="portfolio" class="hide">
@@ -247,7 +259,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12 wow zoomInUp animated">
+                    <div class="col-lg-12 wow fadeIn animated">
                         <form>
                             <div class="form-group">
                                 <input type="text" class="form-control" id="ordFullname" name="ordFullname" placeholder="Full Name">
@@ -389,7 +401,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12 wow zoomInUp animated">
+                    <div class="col-lg-12 wow fadeIn animated">
                         <form>
                             <div class="form-group">
                                 <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Full Name">
@@ -435,6 +447,6 @@
 
     <script src="js/classie.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>	
 </body>
 </html>
