@@ -83,6 +83,8 @@
             scrollTop: ($("section#portfolio").offset().top - $("#mainNav").height())
         }, 1250, 'easeInOutExpo');
     });
+	
+	
 
     $(".btn-back").click(function (e) {
         e.preventDefault();
@@ -148,6 +150,16 @@
             scrollTop: ($("section#what-we-do").offset().top - $("#mainNav").height())
         }, 1250, 'easeInOutExpo');
 
+    });
+	
+	$(".btn-back-2-portfolio").click(function (e) {
+        e.preventDefault();
+        $("section#order-form").toggleClass("show hide");
+        $("section#portfolio").toggleClass("hide show");
+
+        $('html, body').stop().animate({
+            scrollTop: ($("section#portfolio").offset().top - $("#mainNav").height())
+        }, 1250, 'easeInOutExpo');
     });
 	
 	$(window).load(function(){

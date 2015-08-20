@@ -22,6 +22,10 @@ body {
     font-family: 'NexaLight',sans-serif;
 }
 
+a{
+	transition: all ease 1s;
+}
+
 #preloader{
 	position: fixed;
     left: 0;
@@ -475,7 +479,6 @@ header .btn {
     left: 0;
     right: 0;
     background-color: rgba(0,0,0,.6);
-    font-size: 18px;
     color: #fff;
 }
 
