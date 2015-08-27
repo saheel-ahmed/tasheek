@@ -873,6 +873,10 @@ footer {
 	.timeline .RHS .timeline-item::before{
 		display: none;
 	}
+	
+	.carousel-control{
+		top: 80px;
+	}
 }
 
 /* Landscape */
@@ -906,6 +910,9 @@ footer {
 	.timeline .LHS .timeline-item::before{ margin-right: -93px; }
 	.timeline .RHS .timeline-item::before{ margin-left: -93px; }
 	
+	.carousel-control{
+		top: 80px;
+	}
 }
 
 @media (max-width:480px) {
