@@ -83,8 +83,6 @@
             scrollTop: ($("section#portfolio").offset().top - $("#mainNav").height())
         }, 1250, 'easeInOutExpo');
     });
-	
-	
 
     $(".btn-back").click(function (e) {
         e.preventDefault();
@@ -116,8 +114,8 @@
         $(".cart").html("");
         $("#cart").val("");
         var _wishList = "";
-        $("section#portfolio input[type='checkbox']:checked").parent().parent().parent().parent().find("h3 span.car-name").each(function (_index, _ele) {
-            _wishList += ',"'+ $(_ele).text() +'"'; 
+        $("section#portfolio input[type='checkbox']:checked").each(function (_index, _ele) {
+            _wishList += ',"'+ $(_ele).val() +'"'; 
         });
         _wishList = _wishList.substring(1);
         $(".cart").html(_wishList);
@@ -153,18 +151,35 @@
     });
 	
 	$(".btn-back-2-portfolio").click(function (e) {
-        e.preventDefault();
+		e.preventDefault();
         $("section#order-form").toggleClass("show hide");
         $("section#portfolio").toggleClass("hide show");
 
         $('html, body').stop().animate({
             scrollTop: ($("section#portfolio").offset().top - $("#mainNav").height())
         }, 1250, 'easeInOutExpo');
+
     });
 	
 	$(window).load(function(){
 		$("#preloader").fadeOut();
 	});
 	
+	
+	$.fn.cycle.defaults.autoSelector = '.slideshow';
+	
+	$(document).on("click", ".open-thumb", function(e){
+		e.preventDefault();
+		$(this).toggleClass("fa-plus fa-minus");
+		if( $(".carousel-thumb").hasClass("open") ){
+			$(".carousel-thumb").removeClass("open");
+		}else{
+			$(".carousel-thumb").addClass("open");
+		}
+	});
+	
+	$(document).on("blur", ".carousel-thumb", function(){
+		/*setTimeout(function(){ $(".open-thumb").click(); }, 5000); */
+	})
 
 })(jQuery); // End of use strict

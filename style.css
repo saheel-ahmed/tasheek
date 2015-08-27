@@ -22,9 +22,7 @@ body {
     font-family: 'NexaLight',sans-serif;
 }
 
-a{
-	transition: all ease 1s;
-}
+.checkbox, .radio{ margin-top: 0px; margin-bottom: 0px; }
 
 #preloader{
 	position: fixed;
@@ -168,7 +166,6 @@ header {
     display: block;
     background-color: #fff;
     background-image: url('images/the-meetups-banner.jpg');
-    background-attachment: fixed;
     background-size: cover;
     background-position: 80% 20%;
     background-repeat: no-repeat;
@@ -204,10 +201,14 @@ header .white-area {
     z-index: 10;
     right: 0px;
     background-color: rgba(255,255,255,1);
-    display: flex;
-    display: -webkit-flex;
+    display: flex;    
     justify-content: center;
+	align-items: center;
+	
+	display: -webkit-flex;
     -webkit-justify-content: center;
+	-webkit-align-items: center;
+	
     overflow: auto;
     transition: all ease .8s;
 	font-size: 11px;
@@ -236,7 +237,6 @@ header .white-area {
 
         header .white-area a.close-white-board {
             position: absolute;
-			top: 10px;
             right: 10px;
             font-size: 20px;
             color: #302f2f;
@@ -263,8 +263,9 @@ header .white-area {
         }
 
 header .submit-name {
-    margin: 74px 48px 0px 0px;
-    
+    max-width: 276px;
+    margin: -197px 48px 0px 0px;
+    float: right;
 }
 
 header .desc {
@@ -467,8 +468,17 @@ header .btn {
 #portfolio {
     background-color: #000;
     color: #fff;
+	position: fixed;
+	left: 0px; 
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color:#000;
+	z-index: 999999;
+	width: 100%;
     display: flex;
     flex-direction: column;
+	
     display: -webkit-flex;
     -webkit-flex-direction: column;
 }
@@ -493,14 +503,6 @@ header .btn {
             color: #a1a1a1;
         }
 
-.checkbox {
-    transition: all ease 0.4s;
-}
-
-    .checkbox:hover {
-        transform: scale(1.1);
-    }
-
 .portfolio-body {
     flex: 1;
     -webkit-flex: 1;
@@ -509,21 +511,34 @@ header .btn {
 .carousel-inner {
     display: flex;
     display: -webkit-flex;
-    /*min-height: 100vh;*/
+	flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100vh;
 }
 
     .carousel-inner .item {
         flex: 1;
-        -webit-flex: 1;
+        -webkit-flex: 1;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         background-position: center center;
     }
 
 .carousel-caption {
     bottom: auto;
-    padding-top: 100px;
     text-align: left;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(0,0,0, 0.4);
+	padding: 10px;
+}
+
+.carousel-caption a{
+	color: #fff;
+}
+
+.carousel-control{
+	top: 40px;
 }
 
 .carousel-fade .carousel-inner .item {
@@ -556,6 +571,41 @@ header .btn {
     z-index: 2;
 }
 
+.slideshow { width: 100%; margin: auto; }
+.slideshow img { width: 146px !important;  max-height: 80px; margin: 2px; border: 1px solid #f9f9f9; border-radius: 6px; cursor: pointer; opacity: 0.4 !important; background-color: #6b6b6b; background-size: cover; background-repeat: no-repeat; background-position: center center; transition: all ease 1s; }
+.slideshow img:hover { opacity: 1 !important; }
+
+.carousel-thumb { position: absolute; right: 0; left: 0; bottom: -100px; z-index: 100; padding: 6px 0px 6px 0px; background-color: rgba(22,22,22,0.4);
+transition: all ease 1s;  }
+.carousel-thumb.open{  bottom: 0px; }
+.open-thumb{     
+	background-color: rgba(255, 255, 255, 0.8);
+    color: #282727!important;
+    padding: 6px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: -66px;
+    left: 15%; 
+	text-decoration: none!important;
+	transition: all ease 0.4s;
+}
+.open-thumb:hover{
+	text-decoration: none!important;
+	background-color: #282727;
+	color: #fff!important;
+}
+
+#prev_design, #next_design{
+	font-size: 20px;
+	margin-top: 20%;
+	color: #fff;
+	text-decoration: none;
+}
+#prev_design:hover, #next_design:hover{ text-decoration: none; }
+
+
 /** Order Form ***/
 #order-form {
     background-color: #000;
@@ -571,6 +621,10 @@ header .btn {
     #order-form h2 {
         color: #fff;
     }
+	
+	#order-form h2 .cart{
+		font-size: 16px;
+	}
 
 #order-form .sub-headings {
     font-family: 'Kaushan';
@@ -740,3 +794,133 @@ footer {
         max-width: 772px;
         margin: 0px auto;
     }
+	
+/*Mobile portrait*/
+@media (max-width:480px) {
+	header{
+		background-position: 50% 50%;
+	}
+	
+	header .submit-name{
+		float: none;
+		margin: 40px auto;
+	}
+}
+
+/*Mobile landscape*/
+@media (min-width: 481px) and (max-width:599px) {
+
+}
+
+@media (max-width:480px) {
+
+	#what-we-do{
+		background-size: 100%;
+		padding-bottom: 107px;
+	}
+
+	.timeline{
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		background-image: none;
+	}
+	.timeline .LHS{
+		width: 100%;
+		text-align: center;
+	}
+	.timeline .LHS .timeline-item{
+		padding-right: 0px;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.timeline .LHS .timeline-item::before{
+		display: none;
+	}
+	
+	.timeline .RHS{
+		width: 100%;
+		text-align: center;
+		padding-top: 0px;
+		height: auto;
+		min-height: 0px;
+	}
+	
+	.timeline .RHS .timeline-item{
+		padding-left: 0px;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.timeline .RHS .timeline-item::before{
+		display: none;
+	}
+}
+
+/*Small tablet portrait*/
+@media (min-width: 600px) and (max-width: 767px) {
+	.timeline .LHS{
+		width: 100%;
+	}
+}
+
+/*Small tablet landscape*/
+@media (min-width: 768px) and (max-width: 979px) {
+	
+	header{
+		background-position: 50% 50%;
+	}
+	
+	header .submit-name{
+		float: none;
+		margin: 40px auto;
+	}
+	
+	#what-we-do{
+		background-position: -36px bottom;
+		padding-bottom: 266px;
+		background-size: 110%;
+	}
+
+	.timeline .LHS .timeline-item::before{
+		margin-right: -95px;
+	}
+	.timeline .RHS .timeline-item::before{
+		margin-left: -95px;
+	}
+}
+/*Tablet portrait*/
+@media (min-width:801px) and (max-width:1023px) {
+
+}
+
+/*Tablet landscape (1024x768)*/
+@media (min-width: 992px) and (max-width: 1199px){
+
+}	
+
+@media (max-width:1024px) {
+	.carousel-inner .item{ background-size: 100%; }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait){
+	header{ background-position: 50% 50%; }
+	.carousel-inner .item { background-size: 100%; }
+	.carousel-thumb.open{  bottom: 20px; }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape){
+	
+	header{ background-position: 50% 50%; }
+	.carousel-inner .item { background-size: 100%; }
+	.open-thumb{ margin-top: -140px; }
+	.carousel-thumb.open{  bottom: 20px; }
+}

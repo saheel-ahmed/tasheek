@@ -47,7 +47,7 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a class="page-scroll" href="#page-top">Home</a></li>
                     <li><a class="page-scroll" href="#what-we-do">What we do?</a></li>
-                    <li><a class="page-scroll" href="#page-top"><img src="images/logo.png" class="img-responsive" style="height: 40px;" /></a></li>
+                    <li class="hidden-xs"><a class="page-scroll" href="#page-top"><img src="images/logo.png" class="img-responsive" style="height: 40px;" /></a></li>
                     <li><a class="page-scroll" href="#who-we-are">Who are we?</a></li>
                     <li><a class="page-scroll" href="#holla-at-us">Holla at us</a></li>
                 </ul>
@@ -84,45 +84,35 @@
                     </div>
                 </div>
                 
-                <div class="col-md-3">
-				</div>
-				
-				<div class="col-md-6">
-					<!-- Description -->
-					<div class="desc wow fadeIn animated" data-wow-duration=".6s" data-wow-delay="0.2s">
-						<h1>We design decals for your car with passion</h1>
-						<p>
-							Just to be clear, we don't normally do designs for Camry...<br />
-							but we'll make an exemption
-						</p>
-						<a class="btn page-scroll" role="button"><strong>Tasheek means Shift</strong></a>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<!-- Submit Name on Whiteboard -->
-					<div class="submit-name wow fadeIn animated" data-wow-duration=".6s" data-wow-delay="0.4s">
-						<span>
-							Write your favorite car name<br class=" hidden-xs" />
-							and it will show up on the white board <i class="glyphicon glyphicon-hand-right"></i>
-						</span>
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control text-center" id="number" name="number" placeholder="Your name">
-							</div>
-							<a class="btn btn-block" role="button">Submit</a>
-						</form>
-					</div>
-				</div>
-				
-                
+                <!-- Description -->
+                <div class="desc wow fadeIn animated" data-wow-duration=".6s" data-wow-delay="0.2s">
+                    <h1>We design decals for your car with passion</h1>
+                    <p>
+                        Just to be clear, we don't normally do designs for Camry...<br />
+                        but we'll make an exemption
+                    </p>
+                    <a class="btn page-scroll" role="button"><strong>Tasheek means Shift</strong></a>
+                </div>
 
-                
+                <!-- Submit Name on Whiteboard -->
+                <div class="submit-name wow fadeIn animated" data-wow-duration=".6s" data-wow-delay="0.4s">
+                    <span>
+                        Write your favorite car name<br class=" hidden-xs" />
+                        and it will show up on the white board <i class="glyphicon glyphicon-hand-right"></i>
+                    </span>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control text-center" id="number" name="number" placeholder="Your name">
+                        </div>
+                        <a class="btn btn-block" role="button">Submit</a>
+                    </form>
+                </div>
 
             </div>
         </div>
     </header>
 
-	<section id="what-we-do" class="show">
+    <section id="what-we-do" class="show">
 		<div class="container">
         <div class="timeline">
             <div class="LHS wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -176,59 +166,134 @@
     </section>
 
     <section id="portfolio" class="hide">
-        <div class="portfolio-header">
+        <!--<div class="portfolio-header">
             <div class="col-sm-6">
                 <a href="#" role="button" class="btn-back"><i class="fa fa-angle-left"></i> Back to What we do</a>
             </div>
             <div class="col-sm-6 text-right">
-                <a href="#" role="button" class="btn-proceed-collection">Proceed <i class="fa fa-angle-right"></i></a>
+                
             </div>
         </div>
+		-->
         <div class="portfolio-body">
 
             <div id="carousel-portfolio" class="carousel slide carousel-fade">
-                <!--<ol class="carousel-indicators">
-                    <li data-target="#carousel-portfolio" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-portfolio" data-slide-to="1" class=""></li>
-                </ol>-->
+				
+				<div class="carousel-thumb">
+					<a href="#" class="open-thumb fa fa-plus"></a>
+					<div class="container">
+					<div class="row">
+						<div class="col-xs-2 text-right">
+							<a href="#" id="prev_design" class="fa fa-chevron-left"></a>
+						</div>
+						<div class="col-xs-8">
+							<div class="slideshow" 
+								data-cycle-fx=carousel
+								data-cycle-timeout=0
+								data-cycle-carousel-visible=6
+								data-cycle-carousel-fluid=true
+								data-cycle-prev="#prev_design" 
+								data-cycle-next="#next_design">
+								<img data-target="#carousel-portfolio" data-slide-to="0" src="images/portfolio/ferrari-red.jpg" />
+								<img data-target="#carousel-portfolio" data-slide-to="1" src="images/portfolio/ferrari-grey.jpg" />
+								<img data-target="#carousel-portfolio" data-slide-to="2" src="images/portfolio/bmw-golden.jpg" />
+								<img data-target="#carousel-portfolio" data-slide-to="3" src="images/portfolio/bmw-purple.jpg" />
+							</div>
+						</div>
+						<div class="col-xs-2">
+							<a href="#" id="next_design" class="fa fa-chevron-right"></a>
+						</div>
+					</div>
+
+					</div>
+				</div>
+				
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active" style="background-image: url(images/portfolio/sample.jpg);">
+                    <div class="item active" style="background-image: url('images/portfolio/ferrari-red.jpg');">
                         <div class="carousel-caption">
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <h3>
-                                        Design Name: <span class="car-name">Nurburgring 1</span> <br />
-                                        Price: 1500 AED
-                                    </h3>
+								<div class="col-sm-2">
+									<a href="#" role="button" class="btn-back"><i class="fa fa-angle-left"></i> What we do</a>
+								</div>
+                                <div class="col-sm-7">
+                                    <span class="car-name">Ferrari Red</span>, Price: 1500 AED
                                 </div>
-                                <div class="col-sm-6 text-right">
-
+                                <div class="col-sm-1 text-right">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox"> Add to basket <i class="fa fa-cart-arrow-down"></i>
+                                            <input type="checkbox" value="Ferrari Red"> Select
                                         </label>
                                     </div>
                                 </div>
+								<div class="col-sm-2 text-right">
+									<a href="#" role="button" class="btn-proceed-collection">Proceed <i class="fa fa-angle-right"></i></a>
+								</div>
                             </div>
                         </div>
                     </div>
-                    <div class="item" style="background-image: url(images/the-meetups-banner.jpg);">
+                    <div class="item" style="background-image: url('images/portfolio/ferrari-grey.jpg');">
                         <div class="carousel-caption">
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <h3>
-                                        Design Name: <span class="car-name">Nurburgring 2</span> <br />
-                                        Price: 1500 AED
-                                    </h3>
+								<div class="col-sm-2">
+									<a href="#" role="button" class="btn-back"><i class="fa fa-angle-left"></i> What we do</a>
+								</div>
+                                <div class="col-sm-7">
+                                    <span class="car-name">Ferrari Grey</span>, Price: 1500 AED
                                 </div>
-                                <div class="col-sm-6 text-right">
-
+                                <div class="col-sm-1 text-right">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox"> Add to basket <i class="fa fa-cart-arrow-down"></i>
+                                            <input type="checkbox" value="Ferrari Grey"> Select
                                         </label>
                                     </div>
                                 </div>
+								<div class="col-sm-2 text-right">
+									<a href="#" role="button" class="btn-proceed-collection">Proceed <i class="fa fa-angle-right"></i></a>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="item" style="background-image: url('images/portfolio/bmw-golden.jpg');">
+                        <div class="carousel-caption">
+                            <div class="row">
+								<div class="col-sm-2">
+									<a href="#" role="button" class="btn-back"><i class="fa fa-angle-left"></i> What we do</a>
+								</div>
+                                <div class="col-sm-7">
+                                    <span class="car-name">BMW Golden</span>, Price: 1500 AED
+                                </div>
+                                <div class="col-sm-1 text-right">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="BMW Golden"> Select
+                                        </label>
+                                    </div>
+                                </div>
+								<div class="col-sm-2 text-right">
+									<a href="#" role="button" class="btn-proceed-collection">Proceed <i class="fa fa-angle-right"></i></a>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="item" style="background-image: url('images/portfolio/bmw-purple.jpg');">
+                        <div class="carousel-caption">
+                            <div class="row">
+								<div class="col-sm-2">
+									<a href="#" role="button" class="btn-back"><i class="fa fa-angle-left"></i> What we do</a>
+								</div>
+                                <div class="col-sm-7">
+                                    <span class="car-name">BMW Purple</span>, Price: 1500 AED
+                                </div>
+                                <div class="col-sm-1 text-right">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="BMW Purple"> Select
+                                        </label>
+                                    </div>
+                                </div>
+								<div class="col-sm-2 text-right">
+									<a href="#" role="button" class="btn-proceed-collection">Proceed <i class="fa fa-angle-right"></i></a>
+								</div>
                             </div>
                         </div>
                     </div>
@@ -247,27 +312,26 @@
     </section>
 
     <section id="order-form" class="hide">
-		<div>
-            <div class="col-sm-6 text-left">
-                <a href="#" role="button" class="btn-back"><i class="fa fa-angle-left"></i> Back to What we do</a>
-            </div>
-            <div class="col-sm-6 text-right">
-                <a href="#" role="button" class="btn-back-2-portfolio">Back to portfolio <i class="fa fa-angle-right"></i></a>
-            </div>
-			<div class="clearfix"></div>
-        </div>
+		<div class="row" style="margin-left: 0px; margin-right: 0px;">
+			<div class="col-sm-6 text-left"><a href="#" class="btn-back-2-what-we-do"><i class="fa fa-angle-left"></i> What we do</a></div>
+			<div class="col-sm-6 text-right"><a href="#" class="btn-back-2-portfolio">Portfolio <i class="fa fa-angle-right"></i></a></div>
+		</div>
         <div class="order-content">
             <div class="container">
 
                 <div class="row">
-                    <div class="col-lg-12 wow bounceInUp animated">
-                        <h2>You have selected</h2>
+                    <div class="col-lg-12">
+                        <h2>
+							You have selected<br />
+							<span class="cart"></span>
+						</h2>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12 wow fadeIn animated">
+                    <div class="col-lg-12">
                         <form>
+							<input type="hidden" class="form-control" id="cart" name="cart" />
                             <div class="form-group">
                                 <input type="text" class="form-control" id="ordFullname" name="ordFullname" placeholder="Full Name">
                             </div>
@@ -385,7 +449,7 @@
                     </div>
                 </div>
                 <div class="row wow slideInUp animated">
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <i class="glyphicon glyphicon-earphone"></i>
                         <p>
                             Add your number below, <br />
@@ -393,13 +457,13 @@
                             for any inquiries
                         </p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <i class="glyphicon glyphicon-map-marker"></i>
                         <p>
                             Dubai
                         </p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <i class="glyphicon glyphicon-envelope"></i>
                         <p>
                             <a href="mailto:ask@tasheekgear.com">ask@tasheekgear.com</a>
@@ -447,6 +511,8 @@
     <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/jquery.cycle2.carousel.js"></script>
     <script src="js/moment-with-locales.min.js"></script>
     <script src="js/bootstrap-datetimepicker.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
