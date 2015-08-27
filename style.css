@@ -875,7 +875,7 @@ footer {
 	}
 	
 	.carousel-control{
-		top: 80px;
+		top: 100px;
 	}
 }
 
@@ -911,7 +911,7 @@ footer {
 	.timeline .RHS .timeline-item::before{ margin-left: -93px; }
 	
 	.carousel-control{
-		top: 80px;
+		top: 100px;
 	}
 }
 
